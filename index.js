@@ -8,7 +8,7 @@ const app = express();
 app.use(urlencoded({extended: true}));
 app.use(json());
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+    origin: process.env.FRONTEND_URL || 'https://front-end-calculadora-flax.vercel.app/',
     methods: ['GET', 'POST']
 }));
 
